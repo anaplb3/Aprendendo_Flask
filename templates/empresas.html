@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title> Empresas </title>
+</head>
+<body>
+
+    <div >
+        <table>
+            <thead>
+                <th> Nome </th>
+                <th> CNPJ </th>
+            </thead>
+
+            {% for empresa in empresas %}
+
+            <tr>
+                <td> {{ empresa.nome }}</td>
+                <td> {{ empresa.cnpj }} </td>
+            </tr>
+
+            {% endfor %}
+        </table>
+    </div>
+
+    <h3> <a href="/cadastroEmpresas" target="_self"> Cadastrar empresas </a> </h3>
+    <h3> <a href="/"> Voltar para menu inicial </a> </h3>
+
+</body>
+</html>

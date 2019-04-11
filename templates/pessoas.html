@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title> Pessoas </title>
+</head>
+<body>
+<div >
+        <table>
+            <thead>
+                <th> Nome </th>
+                <th> CPF </th>
+            </thead>
+
+            {% for pessoa in pessoas %}
+
+            <tr>
+                <td> {{ pessoa.nome }}</td>
+                <td> {{ pessoa.cpf }} </td>
+            </tr>
+
+            {% endfor %}
+        </table>
+    </div>
+
+    <h3> <a href="/cadastroPessoas" target="_self"> Cadastrar pessoas </a> </h3>
+    <h3> <a href="/" target="_self"> Voltar para menu inicial </a> </h3>
+</body>
+</html>
